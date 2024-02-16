@@ -16,7 +16,7 @@ public class LampInterctiva : ObjetoInteractuable
         else
         {
             laluz.gameObject.SetActive(true);
-            accionNombre = "Apagarluz";
+            accionNombre = "Apagar luz";
         }
         
     }
