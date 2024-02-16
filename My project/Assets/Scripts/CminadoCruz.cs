@@ -27,6 +27,15 @@ public class CminadoCruz : MonoBehaviour
         Vector3 direc = (transform.forward * verti + transform.right * horiz).normalized;
         cuerpo.velocity = direc * velocidadMovi;
 
+        if (Input.GetButton("Fire1"))
+        {
+            miAnimador.SetBool("Interac", true);
+        }
+        else
+        {
+            miAnimador.SetBool("Interac", false);
+        }
+
 
     }
 }
