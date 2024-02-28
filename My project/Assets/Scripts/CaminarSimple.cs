@@ -22,12 +22,14 @@ public class CaminarSimple : MonoBehaviour
         {
             Vector3 direc = (transform.forward * verti + transform.right * horiz).normalized;
             cuerpo.velocity = direc * velocidadMovi;
-            miAnimador.SetBool("Correr", true);
+            miAnimador.SetBool("CAMINANDO", true);
         }
         else
         {
             cuerpo.velocity = new Vector3(0, 0, 0);
-            miAnimador.SetBool("Correr", false);
+            miAnimador.SetBool("CAMINANDO", false);
         }
+
+    
     }
 }
